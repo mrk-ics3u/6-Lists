@@ -1,0 +1,174 @@
+{
+  "title": "Lab 6 - List Practice",
+  "cases": [
+    {
+      "type": "header",
+      "name": "Header is filled in"
+    },
+    {
+      "type": "output",
+      "name": "Seven fruits, remove kiwi",
+      "stdin": [
+        "pear",
+        "fig",
+        "apple",
+        "mango",
+        "kiwi",
+        "date",
+        "lime",
+        "!",
+        "kiwi"
+      ],
+      "expect": [
+        "Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: ['pear', 'fig', 'apple', 'mango', 'kiwi', 'date', 'lime']",
+        "['apple', 'date', 'fig', 'kiwi', 'lime', 'mango', 'pear']",
+        "fig",
+        "lime",
+        "['kiwi', 'lime', 'mango']",
+        "['apple', 'date', 'fig', 'kiwi', 'lime', 'mango']",
+        "Remove item: ['apple', 'date', 'fig', 'lime', 'mango']"
+      ]
+    },
+    {
+      "type": "output",
+      "name": "Remove an item that is gone",
+      "stdin": [
+        "plum",
+        "cherry",
+        "lemon",
+        "apricot",
+        "banana",
+        "grape",
+        "!",
+        "plum"
+      ],
+      "expect": [
+        "Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: ['plum', 'cherry', 'lemon', 'apricot', 'banana', 'grape']",
+        "['apricot', 'banana', 'cherry', 'grape', 'lemon', 'plum']",
+        "cherry",
+        "grape",
+        "['grape', 'lemon', 'plum']",
+        "['apricot', 'banana', 'cherry', 'grape', 'lemon']",
+        "Remove item:"
+      ]
+    },
+    {
+      "type": "output",
+      "name": "Numbers sort as text",
+      "stdin": [
+        "30",
+        "4",
+        "100",
+        "25",
+        "7",
+        "61",
+        "!",
+        "4"
+      ],
+      "expect": [
+        "Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: ['30', '4', '100', '25', '7', '61']",
+        "['100', '25', '30', '4', '61', '7']",
+        "30",
+        "4",
+        "['4', '61', '7']",
+        "['100', '25', '30', '4', '61']",
+        "Remove item: ['100', '25', '30', '61']"
+      ]
+    },
+    {
+      "type": "comments",
+      "name": "Code is commented",
+      "min": 3
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Challenge 1 - Task Scheduler",
+      "file": "challenges/task_scheduler.py",
+      "cases": [
+        {
+          "type": "output",
+          "name": "Two Review code tasks",
+          "stdin": [
+            "Plan sprint",
+            "Review code",
+            "Take break",
+            "Fix bug",
+            "Review code",
+            "done"
+          ],
+          "expect": [
+            "Task: Task: Task: Task: Task: Task: ['Check email', 'Complete project', 'Fix bug', 'Plan sprint', 'Review code', 'Review code']",
+            "Review code count: 2"
+          ]
+        },
+        {
+          "type": "output",
+          "name": "No Review code tasks",
+          "stdin": [
+            "Take break",
+            "Update docs",
+            "done"
+          ],
+          "expect": [
+            "Task: Task: Task: ['Check email', 'Complete project', 'Update docs']",
+            "Review code count: 0"
+          ]
+        },
+        {
+          "type": "output",
+          "name": "Take break only",
+          "stdin": [
+            "Take break",
+            "done"
+          ],
+          "expect": [
+            "Task: Task: ['Check email', 'Complete project']",
+            "Review code count: 0"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Challenge 2 - Discount Calculator",
+      "file": "challenges/discount_calculator.py",
+      "cases": [
+        {
+          "type": "output",
+          "name": "25% off four prices",
+          "stdin": [
+            "40",
+            "8",
+            "120",
+            "60",
+            "done",
+            "25"
+          ],
+          "expect": "Price: Price: Price: Price: Price: Discount %: [30.0, 6.0, 90.0, 45.0]"
+        },
+        {
+          "type": "output",
+          "name": "10% off",
+          "stdin": [
+            "35",
+            "90",
+            "done",
+            "10"
+          ],
+          "expect": "Price: Price: Price: Discount %: [31.5, 81.0]"
+        },
+        {
+          "type": "output",
+          "name": "No discount",
+          "stdin": [
+            "12",
+            "5",
+            "done",
+            "0"
+          ],
+          "expect": "Price: Price: Price: Discount %: [12.0, 5.0]"
+        }
+      ]
+    }
+  ]
+}
