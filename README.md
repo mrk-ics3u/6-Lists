@@ -23,13 +23,13 @@ For example, the items `x`, `a`, `m`, `c`, `q`, `b`, `!`, then `c` for the
 item to remove, print:
 
 ```
-Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: Input Item: ['x', 'a', 'm', 'c', 'q', 'b']
+['x', 'a', 'm', 'c', 'q', 'b']
 ['a', 'b', 'c', 'm', 'q', 'x']
 c
 m
 ['m', 'q', 'x']
 ['a', 'b', 'c', 'm', 'q']
-Remove item: ['a', 'b', 'm', 'q']
+['a', 'b', 'm', 'q']
 ```
 
 The prompts land on the same line as the next output, because the typed answers
